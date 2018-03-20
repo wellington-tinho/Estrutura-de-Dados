@@ -1,8 +1,8 @@
-// Arvore-binaria-simples
 //arvore binaria 
 
 #include <stdio.h>
 #include <stdlib.h>
+
 typedef struct Arvore arv;
 
 struct Arvore{
