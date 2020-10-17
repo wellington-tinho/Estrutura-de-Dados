@@ -18,8 +18,8 @@
 |-------------------------------------|-------|------|--------|
 | [Algoritmo Genetico][1]             | [C](/src/C/AlgorimoGenetico.c) | Python | Javascript |
 | [Arvore B][2]                       | [C](/src/C/ArvoreB.c) | Python |  Javascript | 
-| [Algoritmo Dijkstra][3]             | C |  [Python](/src/Python/dijkstra.c) |  Javascript | 
-| [Threads ex:filosofos_dinner][4]     | C | [Python](/src/Python/filosofos_dinner.c) |  Javascript | 
+| [Algoritmo Dijkstra][3]             | C |  [Python](/src/Python/dijkstra.py) |  Javascript | 
+| [Threads ex:filosofos_dinner][4]     | C | [Python](/src/Python/filosofos_dinner.py) |  Javascript | 
 
 [1]: https://pt.wikipedia.org/wiki/Algoritmo_gen%C3%A9tico
 [2]: https://pt.wikipedia.org/wiki/%C3%81rvore_B
