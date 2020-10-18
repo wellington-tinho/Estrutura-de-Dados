@@ -1,5 +1,3 @@
-# python3
-# coding: utf-8
 
 g = {'s':{'t':10,'y':5},
     't':{'y':2,'x':1},
@@ -8,20 +6,7 @@ g = {'s':{'t':10,'y':5},
     'z':{'s':7,'x':6}
     }
 
-
-start = 's'
-S=[]
-d = {}
-prev = {}
-Q = list(g.keys())
-
-for k in Q:
-    d[k] = float('inf')
-    prev[k] = None
-    
-d[start] = 0
-
-def extract_min(d,q):
+def extrac_min(d,q):
     min_ = q[0]
     for i in q:
         if d[i]<d[min_]:
@@ -34,14 +19,33 @@ def relax(u,v,d,prev,g):
         if d[v] > soma:
             d[v] = soma
             prev[v] = u
-            
-while Q:
-    u = extrac_min(d,Q)
-    S.append(u)
-    for v in g[u].keys():
-    
 
-print(d)
-print(prev) 
-print(S)
+
+def dijkstra(g,start):
+    S=[]
+    d = {}
+    prev = {}
+    Q = list(g.keys())
+
+    for k in Q:
+        d[k] = float('inf')
+        prev[k] = None
+
+    d[start] = 0
+
+    while Q:
+        u = extrac_min(d,Q)
+        S.append(u)
+        
+        for v in g[u].keys():
+            relax(u,v,d,prev,g)
+            
+    print("Distancias: ",d)
+    print("Antecessor: ",prev)
+   
+
+
+
+dijkstra(g,'s')
+
 
